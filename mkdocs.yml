@@ -1,4 +1,12 @@
 site_name: Jetson Docs
+site_url: https://jetsondocs.federicolanzani.com
+site_author: Federico Lanzani
+site_description: >-
+  NVIDIA Jetson independent documentation.
+
+# Repository
+repo_name: lanzani/jetsondocs
+repo_url: https://github.com/lanzani/jetsondocs
 
 theme:
   name: material
@@ -55,3 +63,26 @@ extra:
       link: https://twitter.com/FederLanzani
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/lanzani/
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - getting-started/index.md
+      - Board configuration:
+          - Jetson Nano 2GB/4GB: getting-started/jetson-nano.md
+      - What is ...?:
+          - Gstreamer: getting-started/what-is/gstreamer.md
+          - Deepstream: getting-started/what-is/deepstream.md
+
+  - Libraries on jetson:
+      - building-on-jetson/index.md
+      - Machine Learning:
+          - building-on-jetson/tensorflow.md
+      - Computer Vision:
+          - building-on-jetson/opencv.md
+          - building-on-jetson/mediapipe.md
+  - Docker:
+      - docker/index.md
+      - Base NVIDIA images: docker/base.md
+      - OpenCV: docker/opencv.md
+      - Mediapipe: docker/mediapipe.md
