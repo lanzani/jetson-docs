@@ -81,6 +81,7 @@ nav:
       - Computer Vision:
           - building-on-jetson/opencv.md
           - building-on-jetson/mediapipe.md
+          - building-on-jetson/yolov8.md
   - Docker:
       - docker/index.md
       - Base NVIDIA images: docker/base.md
