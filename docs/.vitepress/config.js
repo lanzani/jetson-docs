@@ -5,6 +5,7 @@ const librariesSidebar = [
 
 const gettingStartedSidebar = [
     {text: "Getting Started", link:"/getting-started/"},
+    {text: "First Boot", link:"/getting-started/first-boot"},
     {text: "Docker", link:"/getting-started/docker"}
 ]
 
