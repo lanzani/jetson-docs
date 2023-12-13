@@ -1,1 +1,0 @@
-# NVIDIA base images
