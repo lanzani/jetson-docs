@@ -1,18 +1,15 @@
 # OpenCV
 
 ## Pre-built packages
+_Tested on: Jetson Nano 4GB_
 
-### Jetson devices
+To know more about the build flags, look at [Build from source](#build-from-source) section below.
 
-Tested on: Jetson Nano 4GB
-
-To know more about the build flags, look at *Build from source* section below.
-
-| Jetpack (l4t)         | Python version | OpenCV version | Package | Package source |
-|-----------------------|----------------|----------------|---------|----------------|
-| r32.7.1 (ubuntu18.04) | 3.6.8          | 4.8.0          |         |                |
-|                       | 3.8.0          | 4.8.0          |         |                |
-|                       | 3.10.11        | 4.8.0          |         |
+| Python version | OpenCV version | Package | Package source |
+|----------------|----------------|---------|----------------|
+| 3.6.8          | 4.8.0          |         |                |
+| 3.8.0          | 4.8.0          |         |                |
+| 3.10.11        | 4.8.0          |         |
 
 ### Install OpenCV from package
 

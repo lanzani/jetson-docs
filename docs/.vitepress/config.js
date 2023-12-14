@@ -1,6 +1,7 @@
 const librariesSidebar = [
+    {text: "Python", link:"/libraries/python"},
     {text: "OpenCV", link:"/libraries/opencv"},
-    {text: "Mediapipe", link:"/libraries/mediapipe"}
+    {text: "Mediapipe GPU", link:"/libraries/mediapipe"}
 ]
 
 const gettingStartedSidebar = [
@@ -16,7 +17,15 @@ module.exports = {
         nav: [
             {text : "Getting Started", link: "/getting-started/"},
             {text : "Libraries", link: "/libraries/"},
-            {text : "About", link: "/about"}
+            {text : "Blog", link: "https://medium.com/jetson-docs"}
+        ],
+
+        footer: {
+            message: 'Released under the MIT License.'
+        },
+
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/lanzani/jetson-docs' }
         ],
 
         sidebar: {
@@ -24,10 +33,23 @@ module.exports = {
             "/getting-started": gettingStartedSidebar
         },
 
+        search: {
+            provider: 'local'
+        },
+
         editLink: {
-            pattern: 'https://github.com/lanzani/jetson-docs/docs/:path',
+            pattern: 'https://github.com/lanzani/jetson-docs/tree/main/docs/:path',
             text: 'Edit this page on GitHub'
+        },
+
+        lastUpdated: {
+            text: 'Updated at',
+            formatOptions: {
+                dateStyle: 'short',
+                timeStyle: 'short'
+            }
         }
+
     },
 
     cleanUrls: true
