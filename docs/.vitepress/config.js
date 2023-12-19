@@ -2,7 +2,15 @@ const librariesSidebar = [
     {
         text: "Python", collapsed: false, items: [
             {text: "Overview", link: "/libraries/python/overview"},
-            {text: "L4T 32.7.1", link: "/libraries/python/l4t32.7.1"}
+            {
+                text: "L4T 32.7.1", collapsed: true, items: [
+                    {text: "Python 2.7", link: "/libraries/python/l4t32.7.1/py2.7.md"},
+                    {text: "Python 3.6.9", link: "/libraries/python/l4t32.7.1/py3.6.9.md"},
+                    {text: "Python 3.8.0", link: "/libraries/python/l4t32.7.1/py3.8.0"},
+                    {text: "Python 3.10.11", link: "/libraries/python/l4t32.7.1/py3.10.11.md"},
+                    {text: "Python 3.11.3", link: "/libraries/python/l4t32.7.1/py3.11.3.md"}
+                ]
+            }
 
         ]
     },
@@ -11,9 +19,9 @@ const librariesSidebar = [
             {text: "Overview", link: "/libraries/opencv/overview"},
             {
                 text: "L4T 32.7.1", collapsed: false, items: [
-                    {text: "Python 3.6.9", link: "/libraries/opencv/l4t32.7.1/py3.6.9.md"},
-                    {text: "Python 3.8.0", link: "/libraries/opencv/l4t32.7.1/py3.8.0"},
-                    {text: "Python 3.10.11", link: "/libraries/opencv/l4t32.7.1/py3.10.11.md"}
+                    {text: "Python 3.6.9", link: "/libraries/opencv/l4t32.7.1/py3.6.9.md"}
+                    // {text: "Python 3.8.0", link: "/libraries/opencv/l4t32.7.1/py3.8.0"},
+                    // {text: "Python 3.10.11", link: "/libraries/opencv/l4t32.7.1/py3.10.11.md"}
                 ]
             }
         ]
@@ -23,9 +31,9 @@ const librariesSidebar = [
             {text: "Overview", link: "/libraries/mediapipe/overview"},
             {
                 text: "L4T 32.7.1", collapsed: false, items: [
-                    {text: "Python 3.6.9", link: "/libraries/mediapipe/l4t32.7.1/py3.6.9.md"},
-                    {text: "Python 3.8.0", link: "/libraries/mediapipe/l4t32.7.1/py3.8.0"},
-                    {text: "Python 3.10.11", link: "/libraries/mediapipe/l4t32.7.1/py3.10.11.md"}
+                    {text: "Python 3.6.9", link: "/libraries/mediapipe/l4t32.7.1/py3.6.9.md"}
+                    // {text: "Python 3.8.0", link: "/libraries/mediapipe/l4t32.7.1/py3.8.0"},
+                    // {text: "Python 3.10.11", link: "/libraries/mediapipe/l4t32.7.1/py3.10.11.md"}
                 ]
             }
         ]
@@ -35,7 +43,7 @@ const librariesSidebar = [
 const gettingStartedSidebar = [
     {text: "Getting Started", link: "/getting-started/"},
     {text: "First Boot", link: "/getting-started/first-boot"},
-    {text: "Docker", link: "/getting-started/docker"}
+    {text: "Setup Docker", link: "/getting-started/docker"}
 ]
 
 module.exports = {
@@ -54,7 +62,8 @@ module.exports = {
         },
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/lanzani/jetson-docs'}
+            {icon: 'github', link: 'https://github.com/lanzani/jetson-docs'},
+            {icon: 'twitter', link: 'https://twitter.com/FederLanzani'}
         ],
 
         sidebar: {

@@ -1,18 +1,23 @@
 # First boot
 
+Required time: <Badge type="info" text="15 min" />
+
+
 ## General
 Remove unwanted software:
 
 ```bash
-sudo apt purge libreoffice* && sudo apt-get clean -y
+sudo apt purge libreoffice* -y && sudo apt-get clean -y
 ```
 
 Update and upgrade:
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
+- When prompted about updating tegra and config press enter to select the default "N"
+- When prompted to restart docker deamon select "yes"
 
-Remove automatic suspension:
+If you need you can remove automatic suspension (optional, but useful in some cases):
 
 ```bash
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
