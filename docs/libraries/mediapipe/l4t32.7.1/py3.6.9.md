@@ -1,22 +1,25 @@
-# Mediapipe for Python 3.6.9
+# Mediapipe GPU for Python 3.6.9
 
-## Mediapipe 0.8.5/0.8.4
+## Mediapipe docker images
 
 ::: tip HEY! 👋
-I've made a docker container with mediapipe 0.8.5 and opencv 4.8.0 ready to use! Check it out.
+I've made a docker container with mediapipe 0.8.5 and opencv 4.8.0 ready to use! [Check it out](/libraries/mediapipe/overview#docker-images).
 <br>
 If you don't want to use docker, keep reading.
 :::
 
+## Mediapipe 0.8.5/0.8.4
+
 ### Pre-requisites
 **Python 3.6.9**
 
-It's the default version for Jetpack 4.6, you can check this box.
+It's the default version for Jetpack 4.6, you are good to go!
 
 **OpenCV**
 
-From the tests I've made OpenCV is needed. I've built it for you, you can thank me later :D
-Follow the steps here to install the wheel or build it yourself. Then come back.
+From the tests I've made, OpenCV is needed to make everything works correctly. Don't worry, I've already built it for you :D
+
+Follow the steps [here](/libraries/opencv/l4t32.7.1/py3.6.9) to install opencv 4.8.0 from wheel. Then come back here.
 
 ~~**Tensorflow**~~
 > Wait, no tensorflow? 
@@ -126,7 +129,7 @@ To conclude, you may need python dataclasses:
 pip3 install dataclasses
 ```
 
-To test that everything properly works, try these scripts.
+To test that everything properly works, try [these scripts](/libraries/mediapipe/overview#test-gpu-support).
 
 ### Build mediapipe
 

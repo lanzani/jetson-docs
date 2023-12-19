@@ -8,7 +8,14 @@ const librariesSidebar = [
     },
     {
         text: "OpenCV", collapsed: false, items: [
-            {text: "Overview", link: "/libraries/opencv/overview"}
+            {text: "Overview", link: "/libraries/opencv/overview"},
+            {
+                text: "L4T 32.7.1", collapsed: false, items: [
+                    {text: "Python 3.6.9", link: "/libraries/opencv/l4t32.7.1/py3.6.9.md"},
+                    {text: "Python 3.8.0", link: "/libraries/opencv/l4t32.7.1/py3.8.0"},
+                    {text: "Python 3.10.11", link: "/libraries/opencv/l4t32.7.1/py3.10.11.md"}
+                ]
+            }
         ]
     },
     {
@@ -16,7 +23,7 @@ const librariesSidebar = [
             {text: "Overview", link: "/libraries/mediapipe/overview"},
             {
                 text: "L4T 32.7.1", collapsed: false, items: [
-                    {text: "Python 3.6.9", link: "/libraries/mediapipe/l4t32.7.1/py3.6.9"},
+                    {text: "Python 3.6.9", link: "/libraries/mediapipe/l4t32.7.1/py3.6.9.md"},
                     {text: "Python 3.8.0", link: "/libraries/mediapipe/l4t32.7.1/py3.8.0"},
                     {text: "Python 3.10.11", link: "/libraries/mediapipe/l4t32.7.1/py3.10.11.md"}
                 ]

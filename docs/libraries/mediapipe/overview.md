@@ -20,7 +20,7 @@ consider using some of the matches that are already present in this page :)
 |--------------------|---------|-----------|----------------------------------------------------------------------------|
 | 4.6.1 (l4t-32.7.1) | 3.6.9   | 0.8.4     | [go to page](/libraries/mediapipe/l4t32.7.1/py3.6.9#mediapipe-0-8-5-0-8-4) |
 | 4.6.1 (l4t-32.7.1) | 3.6.9   | 0.8.5     | [go to page](/libraries/mediapipe/l4t32.7.1/py3.6.9#mediapipe-0-8-5-0-8-4) |
-| 4.6.1 (l4t-32.7.1) | 3.8.0   | 0.10.7    | [go to page](/libraries/mediapipe/l4t32.7.1/py3.10.11#mediapipe-0-10-7)    |
+| 4.6.1 (l4t-32.7.1) | 3.8.0   | 0.10.7    | WIP                                                                        |
 | 4.6.1 (l4t-32.7.1) | 3.10.11 | 0.10.8    | WIP                                                                        |
 
 ## Docker images
@@ -34,41 +34,88 @@ out [docker setup](/getting-started/docker).
 
 Here you can find images with opencv and mediapipe pre-installed.
 
-| Jetpack (l4t)      | Python | OpenCV | Mediapipe | Image | Image source |
-|--------------------|--------|--------|-----------|-------|--------------|
-| 4.6.1 (l4t-32.7.1) | 3.6.8  | 4.8.0  | 0.8.5     | WIP   | WIP          |
-| 4.6.1 (l4t-32.7.1) | 3.8.0  | 4.8.0  | 0.10.7    | WIP   | WIP          |
+#### Jetpack 4.6.1 (l4t-32.7.1)
+
+| Python | OpenCV | Mediapipe | Image                                                                                                                                                       | Image source                                                                                                               |
+|--------|--------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| 3.6.9  | 4.8.0  | 0.8.5     | [l4t32.7.1-py3.6.9-ocv4.8.0-mp0.8.5](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe/159638212?tag=l4t32.7.1-py3.6.9-ocv4.8.0-mp0.8.5) | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.6.9/ocv4.8.0/Dockerfile) |
+| 3.8.0  | 4.8.0  | 0.10.7    | WIP                                                                                                                                                         | WIP                                                                                                                        |
+
 
 ### Build images
 
-Here is the images used to build mediapipe.
+These are the images used to build mediapipe.
 
-| Jetpack (l4t)      | Python | OpenCV | Mediapipe | Image                                                                                                                                 | Image source |
-|--------------------|--------|--------|-----------|---------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 4.6.1 (l4t-32.7.1) | 3.8.0  | 4.8.0  | 0.10.7    | [image](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe/159333313?tag=l4t32.7.1-py3.8.0-ocv4.8.0-mp0.10.7-build) | WIP          |
+#### Jetpack 4.6.1 (l4t-32.7.1)
+
+| Python | OpenCV | Mediapipe | Image                                                                                                                                 | Image source |
+|--------|--------|-----------|---------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 3.8.0  | 4.8.0  | 0.10.7    | [image](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe/159333313?tag=l4t32.7.1-py3.8.0-ocv4.8.0-mp0.10.7-build) | WIP          |
+
+You can find all the available tags [here](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe).
 
 ## Test GPU support
 
-To check if mediapipe uses the gpu, run your script, you will see a log printed in the terminal that says:
+To check if mediapipe uses the gpu, run your script or use one of the following, if you see a log printed in the
+terminal that says:
 
 ```
 Created TensorFlow Lite XNNPACK delegate for GPU.
 ```
 
-Here is some scripts to test if everything works :)
+it means that mediapipe is using the gpu! Congratulations! 🎉
 
 ### Mediapipe 0.8.x
+
+Python scripts in this section works **only** with mediapipe 0.8.x
 
 #### Live pose estimation
 
 With an HD webcam I was able to obtain ~20 fps.
 
 ```python
+import time
 
+import cv2
+import mediapipe as mp
+
+video_source = "/dev/video0"  # Use a webcam
+# video_source = "test_video.mp4"  # Path to video file
+
+# Initialize MediaPipe Pose and Drawing utilities
+mp_pose = mp.solutions.pose
+mp_drawing = mp.solutions.drawing_utils
+pose = mp_pose.Pose()
+
+# Open the video file
+cap = cv2.VideoCapture(video_source)
+time.sleep(2)
+
+while cap.isOpened():
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    # Convert the frame to RGB
+    frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+
+    # Process the frame with MediaPipe Pose
+    result = pose.process(frame_rgb)
+
+    # Draw the pose landmarks on the frame
+    if result.pose_landmarks:
+        mp_drawing.draw_landmarks(frame, result.pose_landmarks, mp_pose.POSE_CONNECTIONS)
+
+    # Display the frame
+    cv2.imshow('MediaPipe Pose', frame)
+
+    # Exit if 'q' keypyt
+    cv2.waitKey(1)
 
 ```
 
 ### Mediapipe 0.10.x
 
+Python scripts in this section works **only** with mediapipe 0.10.x
 
 
