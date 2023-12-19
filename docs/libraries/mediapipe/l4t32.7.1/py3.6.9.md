@@ -8,7 +8,9 @@ I've made a docker container with mediapipe 0.8.5 and opencv 4.8.0 ready to use!
 If you don't want to use docker, keep reading.
 :::
 
-## Mediapipe 0.8.5/0.8.4
+## Mediapipe 0.8.5/0.8.4 installation
+
+20:45 - 23:25
 
 ### Pre-requisites
 **Python 3.6.9**
@@ -73,7 +75,9 @@ pip3 install -U pip testresources setuptools==49.6.0
 
 ::: info
 Some of the following dependencies may be unnecessary, but I suggest to copy-paste all of them to reproduce my working
-setup as close as possible. If you want, you can make some tests to correct what is truly needed and edit this page :)
+setup as close as possible. 
+
+If you want, you can make some tests to correct what is truly needed and edit this page :)
 :::
 
 ```bash
@@ -116,11 +120,11 @@ pip3 install v0.8.5/v0.8.5/numpy119x/py36/mediapipe-0.8.5_cuda102-cp36-cp36m-lin
 ```
 
 ::: tip NOTE
-It will take ~2 hours to build opencv-contrib on jetson nano, so if you see the line:
+It will take ~2,30 hours to build opencv-contrib on jetson nano, so if you see the line:
 
 ```Building wheel for opencv-contrib-python (pyproject.toml): still running...```
 
-don't worry, it is not stuck. It just needs a couple of hours.
+don't worry, it is not stuck. It just needs about two and a half hours.
 :::
 
 To conclude, you may need python dataclasses:

@@ -44,7 +44,7 @@ Here you can find images with opencv and mediapipe pre-installed.
 
 ### Build images
 
-These are the images used to build mediapipe.
+These are the images used to build mediapipe and get the wheel file.
 
 #### Jetpack 4.6.1 (l4t-32.7.1)
 
