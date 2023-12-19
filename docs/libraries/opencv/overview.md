@@ -1,6 +1,6 @@
 # OpenCV
 
-## Pre-built packages
+## OpenCV pre-built installers
 
 _Tested on: Jetson Nano 4GB_
 

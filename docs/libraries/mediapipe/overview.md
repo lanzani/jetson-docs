@@ -16,12 +16,12 @@ consider using some of the matches that are already present in this page :)
 
 ## Mediapipe wheels
 
-| Jetpack (l4t)      | Python  | Mediapipe | Install guide                                                                                   |
-|--------------------|---------|-----------|-------------------------------------------------------------------------------------------------|
-| 4.6.1 (l4t-32.7.1) | 3.6.9   | 0.8.4     | [go to page](http://localhost:5173/libraries/mediapipe/l4t32.7.1/py3.6.9#mediapipe-0-8-5-0-8-4) |
-| 4.6.1 (l4t-32.7.1) | 3.6.9   | 0.8.5     | [go to page](http://localhost:5173/libraries/mediapipe/l4t32.7.1/py3.6.9#mediapipe-0-8-5-0-8-4) |
-| 4.6.1 (l4t-32.7.1) | 3.8.0   | 0.10.7    | [go to page](http://localhost:5173/libraries/mediapipe/l4t32.7.1/py3.6.9#mediapipe-0-8-5-0-8-4) |
-| 4.6.1 (l4t-32.7.1) | 3.10.11 | 0.10.8    | WIP                                                                                             |
+| Jetpack (l4t)      | Python  | Mediapipe | Install guide                                                              |
+|--------------------|---------|-----------|----------------------------------------------------------------------------|
+| 4.6.1 (l4t-32.7.1) | 3.6.9   | 0.8.4     | [go to page](/libraries/mediapipe/l4t32.7.1/py3.6.9#mediapipe-0-8-5-0-8-4) |
+| 4.6.1 (l4t-32.7.1) | 3.6.9   | 0.8.5     | [go to page](/libraries/mediapipe/l4t32.7.1/py3.6.9#mediapipe-0-8-5-0-8-4) |
+| 4.6.1 (l4t-32.7.1) | 3.8.0   | 0.10.7    | [go to page](/libraries/mediapipe/l4t32.7.1/py3.10.11#mediapipe-0-10-7)    |
+| 4.6.1 (l4t-32.7.1) | 3.10.11 | 0.10.8    | WIP                                                                        |
 
 ## Docker images
 
