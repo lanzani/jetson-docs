@@ -9,8 +9,7 @@ If you don't want to use docker, keep reading.
 :::
 
 ## Mediapipe 0.8.5/0.8.4 installation
-
-20:45 - 23:25
+Required time: <Badge type="info" text="2h 40min" />
 
 ### Pre-requisites
 **Python 3.6.9**

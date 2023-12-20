@@ -30,17 +30,22 @@ To properly run docker images on jetson, make sure you have it correctly configu
 out [docker setup](/getting-started/docker).
 :::
 
+::: tip
+To run containers on jetson with display and GPU, look [here](/getting-started/docker#run-docker-containers).
+:::
+
+**Root image**: [ghcr.io/lanzani/mediapipe](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe).
+
 ### Runtime images
 
 Here you can find images with opencv and mediapipe pre-installed.
 
 #### Jetpack 4.6.1 (l4t-32.7.1)
 
-| Python | OpenCV | Mediapipe | Image                                                                                                                                                       | Image source                                                                                                               |
+| Python | OpenCV | Mediapipe | Image tag                                                                                                                                                   | Image source                                                                                                               |
 |--------|--------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | 3.6.9  | 4.8.0  | 0.8.5     | [l4t32.7.1-py3.6.9-ocv4.8.0-mp0.8.5](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe/159638212?tag=l4t32.7.1-py3.6.9-ocv4.8.0-mp0.8.5) | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.6.9/ocv4.8.0/Dockerfile) |
 | 3.8.0  | 4.8.0  | 0.10.7    | WIP                                                                                                                                                         | WIP                                                                                                                        |
-
 
 ### Build images
 
@@ -48,9 +53,9 @@ These are the images used to build mediapipe and get the wheel file.
 
 #### Jetpack 4.6.1 (l4t-32.7.1)
 
-| Python | OpenCV | Mediapipe | Image                                                                                                                                 | Image source |
-|--------|--------|-----------|---------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 3.8.0  | 4.8.0  | 0.10.7    | [image](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe/159333313?tag=l4t32.7.1-py3.8.0-ocv4.8.0-mp0.10.7-build) | WIP          |
+| Python | OpenCV | Mediapipe | Image | Image source |
+|--------|--------|-----------|-------|--------------|
+| 3.8.0  | 4.8.0  | 0.10.7    | WIP   | WIP          |
 
 You can find all the available tags [here](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe).
 
