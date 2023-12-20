@@ -9,7 +9,7 @@ To know more about the build flags look the installation guide, build section.
 | Jetpack (l4t)      | Python  | OpenCV | Install guide                                                               |
 |--------------------|---------|--------|-----------------------------------------------------------------------------|
 | 4.6.1 (l4t-32.7.1) | 3.6.9   | 4.8.0  | [go to page](/libraries/opencv/l4t32.7.1/py3.6.9#opencv-4-8-0-installation) |
-| 4.6.1 (l4t-32.7.1) | 3.8.0   | 4.8.0  | WIP                                                                         |
+| 4.6.1 (l4t-32.7.1) | 3.8.0   | 4.8.0  | [go to page](/libraries/opencv/l4t32.7.1/py3.8.0#opencv-4-8-0-installation) |
 | 4.6.1 (l4t-32.7.1) | 3.10.11 | 4.8.0  | WIP                                                                         |
 
 ## Docker images
@@ -26,6 +26,7 @@ Here you can find images with opencv pre-installed.
 | Jetpack (l4t)      | Python | OpenCV | Image                                                                                                                                    | Image source                                                                                                               |
 |--------------------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | 4.6.1 (l4t-32.7.1) | 3.6.9  | 4.8.0  | [l4t32.7.1-py3.6.9-ocv4.8.0](https://github.com/lanzani/jetson-libraries/pkgs/container/opencv/159649283?tag=l4t32.7.1-py3.6.9-ocv4.8.0) | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.6.9/ocv4.8.0/Dockerfile) |
+| 4.6.1 (l4t-32.7.1) | 3.6.9  | 4.8.0  | [l4t32.7.1-py3.8.0-ocv4.8.0](https://github.com/lanzani/jetson-libraries/pkgs/container/opencv/160202671?tag=l4t32.7.1-py3.8.0-ocv4.8.0) | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.8.0/ocv4.8.0/Dockerfile) |
 
 ### Build images
 
