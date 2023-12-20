@@ -14,8 +14,7 @@ Required time: <Badge type="info" text="2h 40min" />
 ### Pre-requisites
 **Python 3.6.9**
 
-It's the default version for Jetpack 4.6, you are good to go!
-
+It's the default version for Jetpack 4.6 :smile:
 **OpenCV**
 
 From the tests I've made, OpenCV is needed to make everything works correctly. Don't worry, I've already built it for you :D
