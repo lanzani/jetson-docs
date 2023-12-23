@@ -9,7 +9,7 @@ If you don't want to use docker, keep reading.
 :::
 
 ## Mediapipe 0.10.7 installation
-Required time: <Badge type="info" text="" />
+Required time: <Badge type="info" text="15min" />
 
 ### Pre-requisites
 **Python 3.8.0**
@@ -32,7 +32,40 @@ The official mediapipe documentation says something about it [here](https://deve
 
 ### Install mediapipe from wheel
 
+First, update and upgrade:
+```bash
+sudo apt-get update && apt-get upgrade
+```
 
+Download the dependencies:
 
+```bash
+sudo apt-get install -y \
+    libopencv-core-dev \
+    libopencv-highgui-dev \
+    libopencv-calib3d-dev \
+    libopencv-features2d-dev \
+    libopencv-imgproc-dev  \
+    libopencv-video-dev
+```
 
+Upgrade pip:
 
+```bash
+python3.8 -m pip install --upgrade pip
+```
+
+Download the wheel file from [here](https://github.com/lanzani/jetson-libraries/raw/main/libraries/mediapipe/l4t32.7.1/py3.8.0/mp0.10.7/mediapipe-0.10.7-cp38-cp38-linux_aarch64.whl).
+
+Install mediapipe:
+```bash
+python3.8 -m pip install mediapipe-0.10.7-cp38-cp38-linux_aarch64.whl
+```
+
+To conclude, you need to install matplotlib:
+
+```bash
+python3.8 -m pip install matplotlib
+```
+
+To test that everything properly works, try [these scripts](/libraries/mediapipe/overview#test-gpu-support).

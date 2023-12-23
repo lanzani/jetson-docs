@@ -42,10 +42,10 @@ Here you can find images with opencv and mediapipe pre-installed.
 
 #### Jetpack 4.6.1 (l4t-32.7.1)
 
-| Python | OpenCV | Mediapipe | Image tag                                                                                                                                                   | Image source                                                                                                               |
-|--------|--------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| 3.6.9  | 4.8.0  | 0.8.5     | [l4t32.7.1-py3.6.9-ocv4.8.0-mp0.8.5](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe/159638212?tag=l4t32.7.1-py3.6.9-ocv4.8.0-mp0.8.5) | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.6.9/ocv4.8.0/Dockerfile) |
-| 3.8.0  | 4.8.0  | 0.10.7    | WIP                                                                                                                                                         | WIP                                                                                                                        |
+| Python | OpenCV | Mediapipe | Image tag                                                                                                                                                     | Image source                                                                                                                  |
+|--------|--------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| 3.6.9  | 4.8.0  | 0.8.5     | [l4t32.7.1-py3.6.9-ocv4.8.0-mp0.8.5](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe/159638212?tag=l4t32.7.1-py3.6.9-ocv4.8.0-mp0.8.5)   | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.6.9/ocv4.8.0/Dockerfile)    |
+| 3.8.0  | 4.8.0  | 0.10.7    | [l4t32.7.1-py3.8.0-ocv4.8.0-mp0.10.7](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe/160927503?tag=l4t32.7.1-py3.8.0-ocv4.8.0-mp0.10.7) | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/mediapipe/l4t32.7.1/py3.8.0/mp0.10.7/Dockerfile) |
 
 ### Build images
 
@@ -53,8 +53,8 @@ These are the images used to build mediapipe and get the wheel file.
 
 #### Jetpack 4.6.1 (l4t-32.7.1)
 
-| Python | OpenCV | Mediapipe | Image                                     | Image source                                                                                                                                  |
-|--------|--------|-----------|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Python | OpenCV | Mediapipe | Image                                                                                                                                                                     | Image source                                                                                                                                  |
+|--------|--------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | 3.8.0  | 4.8.0  | 0.10.7    | [l4t32.7.1-py3.8.0-ocv4.8.0-mp0.10.7-build](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe/160920674?tag=l4t32.7.1-py3.8.0-ocv4.8.0-mp0.10.7-build) | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/mediapipe/l4t32.7.1/py3.8.0/mp0.10.7/build_mediapipe/Dockerfile) |
 
 You can find all the available tags [here](https://github.com/lanzani/jetson-libraries/pkgs/container/mediapipe).
@@ -71,8 +71,6 @@ Created TensorFlow Lite XNNPACK delegate for GPU.
 it means that mediapipe is using the gpu! Congratulations! 🎉
 
 ### Mediapipe 0.8.x
-
-Python scripts in this section works **only** with mediapipe 0.8.x
 
 #### Live pose estimation
 
@@ -120,8 +118,6 @@ while cap.isOpened():
 ```
 
 ### Mediapipe 0.10.x
-
-Python scripts in this section works **only** with mediapipe 0.10.x
 
 With an HD webcam I was able to obtain ~20 fps.
 
