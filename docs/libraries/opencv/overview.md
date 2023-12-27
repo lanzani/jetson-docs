@@ -24,19 +24,24 @@ out [docker setup](/getting-started/docker)
 
 Here you can find images with opencv pre-installed.
 
-| Jetpack (l4t)      | Python  | OpenCV | Image                                                                                                                                        | Image source                                                                                                                 |
-|--------------------|---------|--------|----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| 4.6.1 (l4t-32.7.1) | 3.6.9   | 4.8.0  | [l4t32.7.1-py3.6.9-ocv4.8.0](https://github.com/lanzani/jetson-libraries/pkgs/container/opencv/159649283?tag=l4t32.7.1-py3.6.9-ocv4.8.0)     | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.6.9/ocv4.8.0/Dockerfile)   |
-| 4.6.1 (l4t-32.7.1) | 3.8.0   | 4.8.0  | [l4t32.7.1-py3.8.0-ocv4.8.0](https://github.com/lanzani/jetson-libraries/pkgs/container/opencv/160202671?tag=l4t32.7.1-py3.8.0-ocv4.8.0)     | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.8.0/ocv4.8.0/Dockerfile)   |
-| 4.6.1 (l4t-32.7.1) | 3.10.11 | 4.8.0  | [l4t32.7.1-py3.10.11-ocv4.8.0](https://github.com/lanzani/jetson-libraries/pkgs/container/opencv/160219897?tag=l4t32.7.1-py3.10.11-ocv4.8.0) | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.10.11/ocv4.8.0/Dockerfile) |
+#### Jetpack 4.6.1 (l4t-32.7.1)
+
+| Python  | OpenCV | Image                                                                                                                                        | Image source                                                                                                                 |
+|---------|--------|----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| 3.6.9   | 4.8.0  | [l4t32.7.1-py3.6.9-ocv4.8.0](https://github.com/lanzani/jetson-libraries/pkgs/container/opencv/159649283?tag=l4t32.7.1-py3.6.9-ocv4.8.0)     | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.6.9/ocv4.8.0/Dockerfile)   |
+| 3.8.0   | 4.8.0  | [l4t32.7.1-py3.8.0-ocv4.8.0](https://github.com/lanzani/jetson-libraries/pkgs/container/opencv/160202671?tag=l4t32.7.1-py3.8.0-ocv4.8.0)     | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.8.0/ocv4.8.0/Dockerfile)   |
+| 3.10.11 | 4.8.0  | [l4t32.7.1-py3.10.11-ocv4.8.0](https://github.com/lanzani/jetson-libraries/pkgs/container/opencv/160219897?tag=l4t32.7.1-py3.10.11-ocv4.8.0) | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.10.11/ocv4.8.0/Dockerfile) |
 
 ### Build images
 
 Here you can find a table with the images used to build opencv and get the installation package.
 
-| Jetpack (l4t) | Python | OpenCV | Mediapipe | Image | Image source |
-|---------------|--------|--------|-----------|-------|--------------|
-|               |        |        |           |       |              |
+#### Jetpack 4.6.1 (l4t-32.7.1)
+
+| Python  | OpenCV | Image                                                                                                                                                    | Image source                                                                                                                              |
+|---------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| 3.8.0   | 4.8.0  | [l4t32.7.1-py3.8.0-ocv4.8.0-build](https://github.com/lanzani/jetson-libraries/pkgs/container/opencv/161674111?tag=l4t32.7.1-py3.8.0-ocv4.8.0-build)     | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.8.0/ocv4.8.0/build_opencv/Dockerfile)   |
+| 3.10.11 | 4.8.0  | [l4t32.7.1-py3.10.11-ocv4.8.0-build](https://github.com/lanzani/jetson-libraries/pkgs/container/opencv/161791728?tag=l4t32.7.1-py3.10.11-ocv4.8.0-build) | [Dockerfile](https://github.com/lanzani/jetson-libraries/blob/main/libraries/opencv/l4t32.7.1/py3.10.11/ocv4.8.0/build_opencv/Dockerfile) |
 
 ## Test GPU support
 
