@@ -10,3 +10,15 @@ This project started to address the frustrating experience caused by the absence
 I've just started _jetson-docs_ and I will add things as I work on them, contributions are welcome :)
 
 For anything, mail me at [hello@federicolanzani.com](mailto:hello@federicolanzani.com)
+
+
+Run dev:
+```bash
+npm run docs:dev
+```
+
+Build:
+```bash
+npm run docs:build
+```
+
