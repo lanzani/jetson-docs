@@ -38,7 +38,7 @@ Now that the pre-requisites are satisfied we can start to install mediapipe from
 
 First, update and upgrade:
 ```bash
-sudo apt-get update && apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade
 ```
 
 Download the dependencies:
@@ -114,7 +114,7 @@ unzip v0.8.5.zip -d v0.8.5
 Install mediapipe:
 
 ```bash
-pip3 install v0.8.5/v0.8.5/numpy119x/py36/mediapipe-0.8.5_cuda102-cp36-cp36m-linux_aarch64.whl
+sudo pip3 install v0.8.5/v0.8.5/numpy119x/py36/mediapipe-0.8.5_cuda102-cp36-cp36m-linux_aarch64.whl
 ```
 
 ::: tip NOTE

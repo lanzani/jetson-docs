@@ -51,6 +51,7 @@ module.exports = {
     description: "Independent Jetson documentation",
     lang: 'en-US',
     themeConfig: {
+        logo: { light: '/.static/logo.svg', dark: '/.static/logo-dark.svg', alt: "JetsonDocs" },
         nav: [
             {text: "Getting Started", link: "/getting-started/"},
             {text: "Libraries", link: "/libraries/"},
