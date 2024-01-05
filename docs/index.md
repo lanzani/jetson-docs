@@ -7,7 +7,7 @@ hero:
   text: Independent jetson documentation
   tagline: This project started to address the frustrating experience caused by the absence of a centralized documentation to work on NVIDIA jetson platforms.
   image:
-    src: /.static/logo.png
+    src: /logo.png
     alt: JetsonDocs
   actions:
     - theme: brand

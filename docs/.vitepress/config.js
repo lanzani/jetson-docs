@@ -50,8 +50,10 @@ module.exports = {
     title: "Jetson Docs",
     description: "Independent Jetson documentation",
     lang: 'en-US',
+    head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+
     themeConfig: {
-        logo: { light: '/.static/logo.svg', dark: '/.static/logo-dark.svg', alt: "JetsonDocs" },
+        logo: { light: '/favicon.ico', dark: '/favicon.ico', alt: "JetsonDocs" },
         nav: [
             {text: "Getting Started", link: "/getting-started/"},
             {text: "Libraries", link: "/libraries/"},
