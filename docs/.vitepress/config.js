@@ -61,7 +61,7 @@ module.exports = {
         ],
 
         footer: {
-            message: 'Released under the MIT License.'
+            message: 'Released under the MIT License. <br><a href="https://github.com/sponsors/lanzani">Sponsor this project</a>.'
         },
 
         socialLinks: [
