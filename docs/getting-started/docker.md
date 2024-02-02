@@ -39,7 +39,7 @@ Setup time: <Badge type="info" text="5 min" />
     ```
 4. Restart docker:
    ```bash
-   sudo systemctl restart docker`
+   sudo systemctl restart docker
    ```
 
 5. Now you need to add docker to the user group:
@@ -48,7 +48,7 @@ Setup time: <Badge type="info" text="5 min" />
    ```
 
 ## Setup docker compose
-
+### Docker compose v1
 Install docker compose with:
 
 ```bash
@@ -56,6 +56,39 @@ sudo apt-get -y install docker-compose
 ```
 
 Reboot is suggested :smile:
+
+To run docker compose v1 use:
+```bash
+docker-compose <...>
+```
+
+### Docker compose v2
+
+Download binaries from docker compose repo, select the version you need.
+```bash
+wget -O docker-compose https://github.com/docker/compose/releases/download/v2.24.5/docker-compose-linux-aarch64
+```
+
+```bash
+DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+```
+
+```bash
+mkdir -p $DOCKER_CONFIG/cli-plugins
+```
+
+```bash
+cp docker-compose $DOCKER_CONFIG/cli-plugins/
+```
+
+```bash
+chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+```
+
+To run docker compose v2 use:
+```bash
+docker compose <...>
+```
 
 ## Run docker containers
 
