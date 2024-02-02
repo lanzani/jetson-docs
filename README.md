@@ -1,3 +1,5 @@
+![jetson-docs-logo](https://github.com/lanzani/jetson-docs/assets/15637306/3f0224ec-4320-4fa2-8d60-2a508d0c9a7b)
+
 # Welcome to Jetson Docs!
 
 > Independent Jetson documentation.
