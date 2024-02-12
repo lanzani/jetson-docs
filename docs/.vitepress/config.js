@@ -37,6 +37,16 @@ const librariesSidebar = [
                 ]
             }
         ]
+    },
+    {
+        text: "Tensorflow", collapsed: false, items: [
+            {text: "Overview", link: "/libraries/tensorflow/overview"},
+            {
+                text: "L4T 32.7.1", collapsed: false, items: [
+                    {text: "Python 3.6.9", link: "/libraries/tensorflow/l4t32.7.1/py3.6.9"}
+                ]
+            }
+        ]
     }
 ]
 
