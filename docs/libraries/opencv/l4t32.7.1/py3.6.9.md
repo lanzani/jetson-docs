@@ -74,10 +74,11 @@ It's the default version for Jetpack 4.6, you are good to go!
      fi
    fi
    
-   export PYTHONPATH=/usr/local/lib/python3.6/site-packages # [!code focus] # [!code ++]
+   export PYTHONPATH=/usr/local/lib/python3.6/site-packages:$PYTHONPATH # [!code focus] # [!code ++]
    ```
+6. Close the terminal and open another one
 
-6. To check if the installation went good you can type:
+7. To check if the installation went good you can type:
     ```bash
     opencv_version
     ```
@@ -88,34 +89,38 @@ It's the default version for Jetpack 4.6, you are good to go!
    the [section below](#check-for-missing-runtime-dependencies).
    :::
 
-7. To check if python has the right opencv version in the scope and to see the build details you can run:
+8. To check if python has the right opencv version in the scope and to see the build details you can run:
 
     ```bash
     python3 -c "import cv2; print('OpenCV version:', str(cv2.__version__)); print(cv2.getBuildInformation())"
     ```
 
-8. To be sure that opencv is properly using cuda (and the gpu) try to run [one of these python scripts](/libraries/opencv/overview#test-gpu-support).
+9. To be sure that opencv is properly using cuda (and the gpu) try to
+   run [one of these python scripts](/libraries/opencv/overview#test-gpu-support).
 
 Congratulations! You now have OpenCV 4.8.0 🎉
 
 If you are encountering some problems feel free to open an [issue](https://github.com/lanzani/jetson-docs/issues).
 
 ### Check for missing runtime dependencies
-If you got some error when importing cv2 in python or executing opencv_version, you may miss some dependencies. 
+
+If you got some error when importing cv2 in python or executing opencv_version, you may miss some dependencies.
 To find those follow the steps:
 
 Go to the opencv installation folder:
+
 ```bash
 cd /usr/local/lib/python3.6/site-packages/cv2/python3.6
 ```
 
 Find missing dynamic dependencies:
+
 ```bash
 ldd cv2.cpython-36m-aarch64-linux-gnu.so | grep found
 ```
 
 Proceed to install the missing dependencies with `sudo apt-get install ...`
 
-
 ### Build from source
+
 Great [video](https://www.youtube.com/watch?v=BCNnqTFi-Gs) by JetsonHacks.

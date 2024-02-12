@@ -94,10 +94,11 @@ here.
      fi
    fi
    
-   export PYTHONPATH=/usr/local/lib/python3.8/site-packages # [!code focus] # [!code ++]
+   export PYTHONPATH=/usr/local/lib/python3.6/site-packages:$PYTHONPATH # [!code focus] # [!code ++]
    ```
+8. Close the terminal and open another one
 
-8. To check if the installation went good you can type:
+9. To check if the installation went good you can type:
     ```bash
     opencv_version
     ```
@@ -108,13 +109,13 @@ here.
    the [section below](#check-for-missing-runtime-dependencies).
    :::
 
-9. To check if python has the right opencv version in the scope and to see the build details you can run:
+10. To check if python has the right opencv version in the scope and to see the build details you can run:
 
-    ```bash
-    python3 -c "import cv2; print('OpenCV version:', str(cv2.__version__)); print(cv2.getBuildInformation())"
-    ```
+     ```bash
+     python3 -c "import cv2; print('OpenCV version:', str(cv2.__version__)); print(cv2.getBuildInformation())"
+     ```
 
-10. To be sure that opencv is properly using cuda (and the gpu) try to
+11. To be sure that opencv is properly using cuda (and the gpu) try to
     run [one of these python scripts](/libraries/opencv/overview#test-gpu-support).
 
 Congratulations! You now have OpenCV 4.8.0 🎉
