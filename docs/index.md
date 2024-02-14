@@ -29,11 +29,15 @@ features:
     details: To speed up development and deployment there are docker images available of the major libraries.
 ---
 
-<br>
-<br>
-<div style="display: flex; justify-content: center; align-items: center">
-    <iframe src="https://github.com/sponsors/lanzani/card" title="Sponsor lanzani" height="225" width="600" style="border: 0;"></iframe>
-</div>
+[//]: # (<br>)
+
+[//]: # (<br>)
+
+[//]: # (<div style="display: flex; justify-content: center; align-items: center">)
+
+[//]: # (    <iframe src="https://github.com/sponsors/lanzani/card" title="Sponsor lanzani" height="225" width="600" style="border: 0;"></iframe>)
+
+[//]: # (</div>)
 
 [//]: # (# Welcome to Jetson Docs!)
 
