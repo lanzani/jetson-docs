@@ -32,7 +32,7 @@ Setup time: <Badge type="info" text="5 min" />
                 "path": "nvidia-container-runtime",
                 "runtimeArgs": []
             }
-        },
+        }, // [!code ++]
     
         "default-runtime": "nvidia" // [!code ++]
     }

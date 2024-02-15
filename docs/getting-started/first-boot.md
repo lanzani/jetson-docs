@@ -14,8 +14,9 @@ Update and upgrade:
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
-- When prompted about updating tegra and config press enter to select the default "N"
-- When prompted to restart docker deamon select "yes"
+- Around 70% progress you will be prompted about updating tegra and config press enter to select the default `N`
+- Around 70% progress you will be prompted about updating nvidia-l4t-oem-config press enter to select the default `N`
+- Around 90% progress you will be prompted to restart docker daemon, select `yes`
 
 If you need you can remove automatic suspension (optional, but useful in some cases):
 

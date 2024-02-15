@@ -1,4 +1,5 @@
 # Tensorflow for Python 3.6.9
+Required time: <Badge type="info" text="20 min" />
 
 Source [here](https://forums.developer.nvidia.com/t/official-tensorflow-for-jetson-nano/71770).
 
