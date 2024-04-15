@@ -56,6 +56,11 @@ const librariesSidebar = [
                 text: "L4T 32.7.1", collapsed: false, items: [
                     {text: "Python 3.6.9", link: "/libraries/tensorflow/l4t32.7.1/py3.6.9"}
                 ]
+            },
+            {
+                text: "L4T 35.4.1", collapsed: false, items: [
+                    {text: "Python 3.8.10", link: "/libraries/tensorflow/l4t35.4.1/py3.8.10"}
+                ]
             }
         ]
     }
