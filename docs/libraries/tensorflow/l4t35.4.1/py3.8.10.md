@@ -16,5 +16,5 @@ Source [here](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-
 
 2. Update keras
     ```bash
-    sudo pip3 install keras==2.6
+    sudo pip3 install keras==2.12.0
     ```
