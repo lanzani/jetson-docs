@@ -23,6 +23,12 @@ const librariesSidebar = [
                     {text: "Python 3.8.0", link: "/libraries/opencv/l4t32.7.1/py3.8.0"},
                     {text: "Python 3.10.11", link: "/libraries/opencv/l4t32.7.1/py3.10.11"}
                 ]
+
+            },
+            {
+                text: "L4T 35.4.1", collapsed: false, items: [
+                    {text: "Python 3.8.10", link: "/libraries/opencv/l4t35.4.1/py3.8.10"}
+                ]
             }
         ]
     },
@@ -60,10 +66,10 @@ module.exports = {
     title: "Jetson Docs",
     description: "Independent Jetson documentation",
     lang: 'en-US',
-    head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+    head: [['link', {rel: 'icon', href: '/favicon.ico'}]],
 
     themeConfig: {
-        logo: { light: '/favicon.ico', dark: '/favicon.ico', alt: "JetsonDocs" },
+        logo: {light: '/favicon.ico', dark: '/favicon.ico', alt: "JetsonDocs"},
         nav: [
             {text: "Getting Started", link: "/getting-started/"},
             {text: "Libraries", link: "/libraries/"},
