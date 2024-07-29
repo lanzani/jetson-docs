@@ -24,3 +24,6 @@ Build:
 npm run docs:build
 ```
 
+_Stats_
+
+[![HitCount](https://hits.dwyl.com/lanzani/jetson-docs.svg?style=flat-square)](http://hits.dwyl.com/lanzani/jetson-docs)
