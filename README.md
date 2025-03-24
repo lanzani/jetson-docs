@@ -2,6 +2,9 @@
 
 # Welcome to Jetson Docs!
 
+⚠️ LOOKING FOR MANTAINERS ⚠️
+Just open an issue and let's talk :)
+
 > Independent Jetson documentation.
 
 Have you ever found yourself in this situation?
